@@ -107,6 +107,7 @@ export default function BulbDigit({ digit, index = 0 }) {
             cx={cx} cy={cy} r={R}
             fill={lit ? `url(#g-lit-${uid})` : `url(#g-dim-${uid})`}
             filter={lit ? `url(#f-glow-${uid})` : undefined}
+            data-testid="bulb-segment"
           />
 
           {/* Specular highlight (only when lit) */}
